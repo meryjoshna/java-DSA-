@@ -12,12 +12,15 @@ import java.util.Scanner;
 public class Assignment1 {
 
     public static void main(String[] args) {
-        evenOrOdd();
-    }
-    static void evenOrOdd(){
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter a number :");
-        int n =sc.nextInt();
+        evenOrOdd(sc.nextInt());
+        System.out.println("Enter name: ");
+        greet(sc.next());
+    }
+    static void evenOrOdd(int n){
+
+
         if(n % 2 ==0){
             System.out.println(n+" is even number");
         }
@@ -25,5 +28,10 @@ public class Assignment1 {
             System.out.println(n+" is odd number");
         }
     }
+    static void greet(String name){
+        System.out.println("Hello "+name);
+
+    }
+
 
 }
