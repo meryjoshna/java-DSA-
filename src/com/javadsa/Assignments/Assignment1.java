@@ -17,6 +17,10 @@ public class Assignment1 {
         evenOrOdd(sc.nextInt());
         System.out.println("Enter name: ");
         greet(sc.next());
+        System.out.println("Enter principal amount: ");
+        System.out.println("Enter no of years: ");
+        System.out.println("Enter rate of interest");
+        simpleInterest(sc.nextDouble(),sc.nextDouble(),sc.nextDouble());
     }
     static void evenOrOdd(int n){
 
@@ -31,6 +35,10 @@ public class Assignment1 {
     static void greet(String name){
         System.out.println("Hello "+name);
 
+    }
+    static void simpleInterest(double p,double t,double r){
+        double i =(p*t*r)/100;
+        System.out.println("simple interest : "+i);
     }
 
 
